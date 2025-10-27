@@ -22,7 +22,7 @@ print_full(){
 }
 
 error(){
-  echo "Opção invalida, utilize -h ou --help para mais informações"
+  echo "Invalid option, use -h or --help for more info."
 }
 
 main() {
