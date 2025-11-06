@@ -24,13 +24,13 @@ print_full_grim() {
 print_region_flameshot() {
     flameshot gui -p "$FILE" &&
         wl-copy <"$FILE" &&
-        notify-send "Region Screenshot Taken with Flameshot" "File saved in $FILE"
+        notify-send --icon=$FILE "Region Screenshot Taken with Flameshot" "File saved in $FILE"
 }
 
 print_full_flameshot() {
     flameshot full -p "$FILE" &&
         wl-copy <"$FILE" &&
-        notify-send "Fullscreen Screenshot Taken with Flameshot" "File saved in $FILE"
+        notify-send --icon=$FILE "Fullscreen Screenshot Taken with Flameshot" "File saved in $FILE"
 }
 
 error() {
